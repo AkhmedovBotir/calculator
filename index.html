@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <form class="calculator">
+                <input type="text" id='field1' readonly value='0' class="value" />
+                <span class="num clear" onclick='cleartxt()' id='C'>c</span>
+                <span class="num" onclick='setOperator(this)' id='divide'>/</span>
+                <span class="num" onclick='setOperator(this)' id='multi'>*</span>
+                <span class="num" onclick='writeNumber(this)' id='n7'>7</span>
+                <span class="num" onclick='writeNumber(this)' id='n8'>8</span>
+                <span class="num" onclick='writeNumber(this)' id='n9'>9</span>
+                <span class="num" onclick='setOperator(this)' id='sustract'>-</span>
+                <span class="num" onclick='writeNumber(this)' id='n4'>4</span>
+                <span class="num" onclick='writeNumber(this)' id='n5'>5</span>
+                <span class="num" onclick='writeNumber(this)' id='n6'>6</span>
+                <span class="num plus" onclick='setOperator(this)' id='sum'>+</span>
+                <span class="num" onclick='writeNumber(this)' id='n1'>1</span>
+                <span class="num" onclick='writeNumber(this)' id='n2'>2</span>
+                <span class="num" onclick='writeNumber(this)' id='n3'>3</span>
+                <span class="num" onclick='writeNumber(this)' id='n0'>0</span>
+                <span class="num" onclick='removeLastNumber()' id='removeLast'> < </span>
+                <span class="num" onclick='setDecimal(this,true)' id='dec'>.</span>
+                <span class="num equal" onclick='calculate()' id='calcular'>=</span>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
